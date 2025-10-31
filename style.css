@@ -1,6 +1,6 @@
 body {
   font-family: "Pretendard", sans-serif;
-  background: linear-gradient(to right, #b9f6ca, #ccff90); /* 연두색 배경 */
+  background: linear-gradient(to right, #b9f6ca, #ccff90);
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -21,7 +21,7 @@ body {
 button {
   background-color: #7b2cbf;
   color: white;
-  font-size: 14px; /* 글씨 크기 작게 */
+  font-size: 12px; /* 글씨 작게 */
   padding: 6px 12px;
   border: none;
   border-radius: 8px;
@@ -35,7 +35,7 @@ button:hover {
 
 .result {
   margin-top: 15px;
-  font-size: 16px; /* 글씨 크기 작게 */
+  font-size: 14px; /* 글씨 작게 */
   color: #333;
   min-height: 35px;
 }
@@ -61,7 +61,7 @@ button:hover {
   border-radius: 8px;
   border: 1px solid #ccc;
   margin-bottom: 8px;
-  font-size: 14px;
+  font-size: 12px; /* 글씨 작게 */
 }
 
 ul {
@@ -77,11 +77,10 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 14px;
+  font-size: 12px; /* 글씨 작게 */
 }
 
 li button {
   background-color: crimson;
-  font-size: 11px;
+  font-size: 10px; /* 글씨 작게 */
   padding: 2px 5px;
-}
