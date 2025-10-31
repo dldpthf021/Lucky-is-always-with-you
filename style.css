@@ -18,11 +18,15 @@ body {
   width: 100%;
 }
 
+title {
+  font-size: 19px; /* 제목 글씨 작게 */
+  margin-bottom: 8px;
+}
+
 h1 {
   font-size: 17px; /* 제목 글씨 작게 */
   margin-bottom: 8px;
 }
-
 button {
   background-color: #7b2cbf;
   color: white;
