@@ -12,7 +12,7 @@
     <p>버튼을 눌러 오늘의 행운을 확인해 보세요! ☺️</p>
     <button id="fortune-btn">행운 보기</button>
     <div id="fortune-result" class="result"></div>
-
+    
     // 추천 버튼 생성
 const recommendationBtn = document.createElement("button");
 recommendationBtn.textContent = "How to be Happy ☘️";
@@ -47,6 +47,7 @@ recommendationBtn.addEventListener("click", () => {
   const randomRec = Math.floor(Math.random() * recommendations.length);
   alert(recommendations[randomRec]); // 알림창으로 추천 표시
 });
+
 
     <hr />
 
