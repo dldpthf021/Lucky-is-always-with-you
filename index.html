@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>오늘의 운세 관리자 버전</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🔮 오늘의 운세</h1>
+    <p>버튼을 눌러 오늘의 운세를 확인해보세요!</p>
+    <button id="fortune-btn">운세 보기</button>
+    <div id="fortune-result" class="result"></div>
+
+    <hr />
+
+    <button id="admin-btn" class="admin-btn">관리자 모드</button>
+    <div id="admin-panel" class="hidden">
+      <h2>관리자 패널</h2>
+
+      <input type="text" id="new-fortune" placeholder="새 운세 입력" />
+      <button id="add-fortune">추가</button>
+
+      <ul id="fortune-list"></ul>
+      <button id="clear-all">모든 운세 삭제</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
