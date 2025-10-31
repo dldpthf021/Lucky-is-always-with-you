@@ -21,7 +21,7 @@ body {
 button {
   background-color: #7b2cbf;
   color: white;
-  font-size: 13px; /* 글씨 크기 작게 */
+  font-size: 14px; /* 글씨 크기 작게 */
   padding: 6px 12px;
   border: none;
   border-radius: 8px;
