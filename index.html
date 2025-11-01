@@ -15,20 +15,25 @@
     }
 
     #recommendation-result {
-      background-color: #e0f7d4; /* 연두색 배경 */
+      background-color: #e0f7d4;
+      min-height: 50px; /* 항상 공간 확보 */
+      margin-top: 15px;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>🍀행복이 모이면 행운이 됩니다🍀</h1>
-    <p>버튼을 눌러 오늘의 행운을 확인해 보세요! ☺️</p>
+    <p>버튼을 눌러 당신의 행운을 확인해 보세요! ☺️</p>
 
-    <button id="fortune-btn">행운 보기</button>
+    <button id="fortune-btn">Find your Luck 🍀</button>
     <button id="recommendation-btn" style="display:none;">How to be Happy ☘️</button>
 
+    <!-- 운세 영역 -->
     <div id="fortune-result" class="result"></div>
-    <div id="recommendation-result" class="result"></div>
+
+    <!-- 추천 영역 (항상 아래 고정) -->
+    <div id="recommendation-result" class="result">추천 내용은 여기 표시됩니다.</div>
 
     <hr />
 
@@ -42,7 +47,7 @@
     </div>
   </div>
 
-  <!-- JS 파일 분리 -->
+  <!-- JS 분리 -->
   <script src="script.js"></script>
 </body>
 </html>
