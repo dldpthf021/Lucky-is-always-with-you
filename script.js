@@ -12,6 +12,7 @@ let fortunes = [
 const fortuneBtn = document.getElementById("fortune-btn");
 const recommendationBtn = document.getElementById("recommendation-btn");
 const fortuneResult = document.getElementById("fortune-result");
+const recommendationResult = document.getElementById("recommendation-result");
 
 const adminBtn = document.getElementById("admin-btn");
 const adminPanel = document.getElementById("admin-panel");
@@ -38,12 +39,13 @@ fortuneBtn.addEventListener("click", () => {
   const randomIndex = Math.floor(Math.random() * fortunes.length);
   fortuneResult.textContent = fortunes[randomIndex];
   recommendationBtn.style.display = "inline-block";
+  recommendationResult.textContent = ""; // 추천 영역 초기화
 });
 
 // 추천 버튼 클릭
 recommendationBtn.addEventListener("click", () => {
   const randomRec = Math.floor(Math.random() * recommendations.length);
-  fortuneResult.textContent += "\n\n추천: " + recommendations[randomRec];
+  recommendationResult.textContent = "추천: " + recommendations[randomRec];
 });
 
 // 관리자 버튼
@@ -93,4 +95,3 @@ clearBtn.addEventListener("click", () => {
     updateFortuneList();
   }
 });
-
