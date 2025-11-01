@@ -5,14 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lucky is always with us</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .result {
+      border: 1px solid #ddd;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+
+    #recommendation-result {
+      background-color: #e0f7d4; /* 연두색 배경 */
+    }
+  </style>
 </head>
 <body>
   <div class="container">
     <h1>🍀행복이 모이면 행운이 됩니다🍀</h1>
     <p>버튼을 눌러 오늘의 행운을 확인해 보세요! ☺️</p>
+
     <button id="fortune-btn">행운 보기</button>
     <button id="recommendation-btn" style="display:none;">How to be Happy ☘️</button>
+
     <div id="fortune-result" class="result"></div>
+    <div id="recommendation-result" class="result"></div>
 
     <hr />
 
